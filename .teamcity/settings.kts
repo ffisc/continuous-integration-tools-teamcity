@@ -48,11 +48,11 @@ object Build : BuildType({
     params {
         password("env.AWS_SECRET_ACCESS_KEY", "reference", display = ParameterDisplay.HIDDEN)
         password("env.AWS_ACCESS_KEY_ID", "reference", display = ParameterDisplay.HIDDEN)
-        param("env.AWS_DEFAULT_REGION", "UPDATE_THIS_VALUE")
-        param("env.STAGING_FUNCTION_NAME", "UPDATE_THIS_VALUE")
-        param("env.STAGING_URL", "UPDATE_THIS_VALUE")
-        param("env.PRODUCTION_FUNCTION_NAME", "UPDATE_THIS_VALUE")
-        param("env.PRODUCTION_URL", "UPDATE_THIS_VALUE")
+        param("env.AWS_DEFAULT_REGION", "us-west-2")
+        param("env.STAGING_FUNCTION_NAME", "sample-application-production")
+        param("env.STAGING_URL", "https://vdh7uljchwehl6wvo4xmgqwhg40xccfv.lambda-url.us-west-2.on.aws/")
+        param("env.PRODUCTION_FUNCTION_NAME", "sample-application-staging")
+        param("env.PRODUCTION_URL", "https://aseev2vs377v4hogmcwwi4many0lkpkb.lambda-url.us-west-2.on.aws/")
     }
 
     steps {
